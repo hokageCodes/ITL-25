@@ -8,10 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        richPrimary: '#0D0D0D', // Deep black or dark color for the background
+        richAccent: '#B6862C', // Gold or similar for accents and hover states
+        richAccentHover: '#D4AF37', // A lighter gold for hover effects
       },
     },
   },
