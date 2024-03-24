@@ -15,7 +15,7 @@ export default function Home() {
       <PartnersSection />
       <AboutSection />
       <SpeakersSection />
-      <ScheduleSection />
+      {/* <ScheduleSection /> */}
       <ExclusivePerksSection />
     </>
   );

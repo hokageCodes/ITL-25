@@ -16,7 +16,7 @@ interface Speaker {
 }
 const SpeakerCard: React.FC<Speaker> = ({ name, title, imageSrc, socialLinks }) => {
   return (
-    <div className="relative mt-[-100px] w-[350px] h-[350px] bg-white rounded-lg shadow-lg overflow-hidden group">
+    <div className="relative mt-[-100px] w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden group">
       <Image src={imageSrc} alt={name} layout="fill" objectFit="cover" />
       <div className="absolute inset-0 flex flex-col justify-end p-4 bg-opacity-0 bg-black transition-opacity duration-300 ease-linear">
         <div className="text-white text-center">
@@ -83,16 +83,28 @@ const SpeakersSection: React.FC = () => {
         { id: 'linkedin', icon: 'linkedin.svg', link: 'https://linkedin.com' },
       ],
     },
+    {
+      name: 'Albert Barnes',
+      title: 'Founder',
+      imageSrc: '/speaker-hero.jpg',
+      socialLinks: [
+        { id: 'facebook', icon: '/facebook.svg', link: 'https://facebook.com' },
+        { id: 'instagram', icon: '/instagram.svg', link: 'https://instagram.com' },
+        { id: 'twitter', icon: '/twitter.svg', link: 'https://twitter.com' },
+        { id: 'linkedin', icon: 'linkedin.svg', link: 'https://linkedin.com' },
+      ],
+    },
     // Add more speakers as needed
   ];
 
   return (
-    <section className="bg-white text-white py-12">
+    <section className="bg-white text-white py-6">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Who is Speaking</h2>
+          <h2 className="text-3xl text-black font-bold">Our Esteemed Speakers</h2>
+          <p className='text-lg text-black max-w-xl text-center ml-[400px] mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum perspiciatis quas laboriosam incidunt asperiores aliquid at dolore, obcaecati vel, odio corporis assumenda molestiae id?</p>
         </div>
-        <div className="flex flex-wrap justify-around">
+        <div className=" mt-[150px] flex flex-wrap justify-center gap-12">
           {speakers.map((speaker) => (
             <SpeakerCard key={speaker.name} {...speaker} />
           ))}

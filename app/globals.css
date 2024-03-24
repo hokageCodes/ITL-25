@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding: 0 50px;
+}
 
 .perspective {
     transform: perspective(500px) rotateX(10deg);
