@@ -1,7 +1,11 @@
-import Image from "next/image";
+
+import Hero from '@/components/hero/HeroSection';
 
 export default function Home() {
+
   return (
-    <h1>Hello Conference</h1>
+    <>
+      <Hero />
+    </>
   );
 }

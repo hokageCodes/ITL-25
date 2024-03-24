@@ -10,25 +10,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 text-white shadow-lg">
+    <nav className="bg-[#f5f5f5] text-black shadow-lg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-3">
           {/* Logo on the left */}
           <div className="flex items-center">
             <a href="#" className="flex items-center py-4 px-2">
-              <img src="/logo.png" alt="Logo" className="h-8 w-8 mr-2"/>
+              <img src="/itl-logo.svg" alt="Logo" className="h-8 w-8 mr-2"/>
               <span className="font-semibold text-lg">Conference</span>
             </a>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex justify-center flex-1">
-            <a href="#" className="py-4 px-2 mx-2">Home</a>
-            <a href="#" className="py-4 px-2 mx-2">About</a>
-            <a href="#" className="py-4 px-2 mx-2">Speakers</a>
-            <a href="#" className="py-4 px-2 mx-2">Schedule</a>
-            <a href="#" className="py-4 px-2 mx-2">Blog</a>
-            <a href="#" className="py-4 px-2 mx-2">Contact</a>
+            <a href="#" className="py-4 px-2 mx-2">ITL '25</a>
+            <a href="#" className="py-4 px-2 mx-2">Registration</a>
+            <a href="#" className="py-4 px-2 mx-2">Spoonsorship</a>
+            <a href="#" className="py-4 px-2 mx-2">Partners</a>
+            <a href="#" className="py-4 px-2 mx-2">FAQs</a>
+            <a href="#" className="py-4 px-2 mx-2">Awards</a>
           </div>
 
           {/* CTA on the right */}
@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} px-4 pt-2 pb-4`}>
-        <a href="#" className="block py-2 px-4 text-sm">Home</a>
+        <a href="#" className="block py-2 px-4 text-sm">ITL '25</a>
         <a href="#" className="block py-2 px-4 text-sm">About</a>
         <a href="#" className="block py-2 px-4 text-sm">Speakers</a>
         <a href="#" className="block py-2 px-4 text-sm">Schedule</a>

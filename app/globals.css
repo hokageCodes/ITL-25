@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.perspective {
+    transform: perspective(500px) rotateX(10deg);
+    transform-style: preserve-3d;
+  }
+  .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+.bg-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(28, 16, 169, 0.6138) 0%,
+    rgba(11, 6, 67, 0.3168) 0.01%,
+    rgba(11, 6, 67, 0.8316) 86.76%
+  );
+}
