@@ -34,7 +34,7 @@ const Navbar = () => {
 
           {/* CTA on the right */}
           <div className="hidden md:flex">
-            <a href="#" className="py-2 px-4 bg-yellow-500 hover:bg-yellow-600 rounded transition duration-300">Sponsor</a>
+            <a href="#" className="py-2 px-4 bg-purple-500 text-white hover:bg-yellow-600 rounded transition duration-300">Sponsor</a>
           </div>
 
           {/* Hamburger menu button (Mobile view) */}
@@ -58,7 +58,7 @@ const Navbar = () => {
         <a href="#" className="block py-2 px-4 text-sm">Blog</a>
         <a href="#" className="block py-2 px-4 text-sm">Contact</a>
         {/* Adjustments for the "Sponsor" CTA */}
-        <a href="#" className="block mx-auto my-4 py-2 px-4 w-auto bg-yellow-500 hover:bg-yellow-600 rounded transition duration-300 text-center">Sponsor</a>
+        <a href="#" className="block mx-auto my-4 py-2 px-4 w-auto bg-yellow-500 hover:bg-purple-600 rounded transition duration-300 text-center">Sponsor</a>
       </div>
 
     </nav>
