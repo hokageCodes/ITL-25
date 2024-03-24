@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <div className="bg-purple-50">
+    <div className="bg-white">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
           
