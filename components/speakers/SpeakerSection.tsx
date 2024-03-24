@@ -16,7 +16,7 @@ interface Speaker {
 }
 const SpeakerCard: React.FC<Speaker> = ({ name, title, imageSrc, socialLinks }) => {
   return (
-    <div className="relative w-[350px] h-[350px] bg-white rounded-lg shadow-lg overflow-hidden group">
+    <div className="relative mt-[-100px] w-[350px] h-[350px] bg-white rounded-lg shadow-lg overflow-hidden group">
       <Image src={imageSrc} alt={name} layout="fill" objectFit="cover" />
       <div className="absolute inset-0 flex flex-col justify-end p-4 bg-opacity-0 bg-black transition-opacity duration-300 ease-linear">
         <div className="text-white text-center">
@@ -87,12 +87,12 @@ const SpeakersSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-purple-700 text-white py-12">
+    <section className="bg-white text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold">Who is Speaking</h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-around">
           {speakers.map((speaker) => (
             <SpeakerCard key={speaker.name} {...speaker} />
           ))}
