@@ -17,14 +17,14 @@ const Navbar = () => {
           {/* Logo on the left */}
           <div className="flex items-center">
             <a href="#" className="flex items-center py-4 px-2">
-              <Image src="/itl-logo.svg" alt="Logo" className="h-8 w-8 mr-2"/>
+              <Image src="/itl-logo.svg" width={50} height={50} alt="Logo" className="h-8 w-8 mr-2"/>
               <span className="font-semibold text-lg">Conference</span>
             </a>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex justify-center flex-1">
-            <a href="#" className="py-4 px-2 mx-2">ITL '25</a>
+            <a href="#" className="py-4 px-2 mx-2">ITL &lsquo25</a>
             <a href="#" className="py-4 px-2 mx-2">Registration</a>
             <a href="#" className="py-4 px-2 mx-2">Spoonsorship</a>
             <a href="#" className="py-4 px-2 mx-2">Partners</a>

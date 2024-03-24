@@ -1,6 +1,6 @@
 "use client";
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface TimerState {
   days: string;
@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <div className="relative flex min-h-screen items-center justify-center">
       <div className="absolute inset-0 z-0">
-        <Image src="/break.png" alt="Background" className="object-cover w-full h-full" />
+        <Image src="/break.png" layout='fill' alt="Background" className="object-cover w-full h-full" />
         <div className="absolute inset-0 bg-gradient-to-b from-purple-800 via-transparent to-purple-900 opacity-80"></div>
       </div>
 
