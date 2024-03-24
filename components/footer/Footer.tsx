@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
           {/* Column 1: About */}
           <div>
             <a href="#" className="flex items-center mb-4">
-              <img src="/logo.png" alt="Logo" className="h-8 w-8 mr-2" />
+              <Image width={50} height={50} src="/logo.png" alt="Logo" className="h-8 w-8 mr-2" />
               <span className="font-bold text-xl">Conference</span>
             </a>
             <p>The premier event for professionals in the industry, bringing together experts and enthusiasts from around the world.</p>

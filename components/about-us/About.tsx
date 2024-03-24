@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const AboutSection = () => {
@@ -26,7 +27,9 @@ const AboutSection = () => {
           
           {/* Image Content */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-            <img
+            <Image
+              width={500}
+              height={500}
               src="/audience.jpg"
               alt="About the Conference"
               className="rounded-lg shadow-lg w-full h-auto max-w-lg"

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface SocialLink {
@@ -16,13 +17,13 @@ interface Speaker {
 const SpeakerCard: React.FC<Speaker> = ({ name, title, imageSrc, socialLinks }) => {
   return (
     <div className="w-[350px] h-[350px] group relative rounded-lg overflow-hidden shadow-lg">
-      <img src={imageSrc} alt={name} className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110" />
+      <Image width={350} height={350} src={imageSrc} alt={name} className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110" />
       <div className="absolute inset-0 flex flex-col justify-between p-4 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
         <ul className="flex flex-col items-center space-y-2 mt-2 transform -translate-y-8 group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
           {socialLinks.map((link) => (
             <li key={link.id} className="opacity-0 group-hover:opacity-100">
               <a href={link.link} target="_blank" rel="noopener noreferrer">
-                <img src={link.icon} alt={link.id} className="w-6 h-6" />
+                <Image width={50} height={50} src={link.icon} alt={link.id} className="w-6 h-6" />
               </a>
             </li>
           ))}
@@ -43,10 +44,10 @@ const SpeakersSection: React.FC = () => {
           title: 'Founder',
           imageSrc: '/speaker-hero.jpg',
           socialLinks: [
-            { id: 'facebook', icon: '/icons/facebook.svg', link: 'https://facebook.com' },
-            { id: 'instagram', icon: '/icons/instagram.svg', link: 'https://instagram.com' },
-            { id: 'twitter', icon: '/icons/twitter.svg', link: 'https://twitter.com' },
-            { id: 'linkedin', icon: '/icons/linkedin.svg', link: 'https://linkedin.com' },
+            { id: 'facebook', icon: '/facebook.svg', link: 'https://facebook.com' },
+            { id: 'instagram', icon: '/instagram.svg', link: 'https://instagram.com' },
+            { id: 'twitter', icon: '/twitter.svg', link: 'https://twitter.com' },
+            { id: 'linkedin', icon: '/linkedin.svg', link: 'https://linkedin.com' },
           ],
         },
         // More speaker objects...
