@@ -14,7 +14,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ title, speakerName, speaker
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center space-y-2" style={{ width: '300px' }}>
       <div className="w-24 h-24 relative rounded-full overflow-hidden border-2 border-purple-500">
-        <Image src={speakerImage} alt={speakerName} layout="fill" objectFit="cover" />
+        <Image src="/avatar.jpg" alt={speakerName} layout="fill" objectFit="cover" />
       </div>
       <h3 className="font-bold text-purple-700">{title}</h3>
       <p className="text-sm text-purple-500">{`${speakerName} / ${speakerRole}`}</p>
