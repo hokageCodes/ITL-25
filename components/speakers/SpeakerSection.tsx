@@ -90,7 +90,7 @@ const SpeakersSection: React.FC = () => {
     <section className="bg-purple-700 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Who's Speaking</h2>
+          <h2 className="text-3xl font-bold">Who is Speaking</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-8">
           {speakers.map((speaker) => (
