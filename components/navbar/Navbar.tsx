@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
           {/* Logo on the left */}
           <div className="flex items-center">
             <a href="#" className="flex items-center py-4 px-2">
-              <img src="/itl-logo.svg" alt="Logo" className="h-8 w-8 mr-2"/>
+              <Image src="/itl-logo.svg" alt="Logo" className="h-8 w-8 mr-2"/>
               <span className="font-semibold text-lg">Conference</span>
             </a>
           </div>
