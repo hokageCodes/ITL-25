@@ -24,7 +24,7 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex justify-center flex-1">
-            <a href="#" className="py-4 px-2 mx-2">ITL &lsquo25</a>
+            <a href="#" className="py-4 px-2 mx-2">ITL 25</a>
             <a href="#" className="py-4 px-2 mx-2">Registration</a>
             <a href="#" className="py-4 px-2 mx-2">Spoonsorship</a>
             <a href="#" className="py-4 px-2 mx-2">Partners</a>
@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} px-4 pt-2 pb-4`}>
-        <a href="#" className="block py-2 px-4 text-sm">ITL '25</a>
+        <a href="#" className="block py-2 px-4 text-sm">ITL 25</a>
         <a href="#" className="block py-2 px-4 text-sm">About</a>
         <a href="#" className="block py-2 px-4 text-sm">Speakers</a>
         <a href="#" className="block py-2 px-4 text-sm">Schedule</a>
