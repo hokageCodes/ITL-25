@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -38,36 +39,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center">
+    <div className="relative flex items-center justify-center" style={{ height: '75vh' }}>
       <div className="absolute inset-0 z-0">
         <Image src="/break.png" layout='fill' alt="Background" className="object-cover w-full h-full" />
         <div className="absolute inset-0 bg-gradient-to-b from-purple-800 via-transparent to-purple-900 opacity-80"></div>
       </div>
 
       <div className="relative z-10 text-center text-white px-4">
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-4 sm:mt-8">ITIL CONFERENCE 2025</p>
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mt-2 sm:mt-4">
-          Crossing Borders<br /><span className="sm:inline-block sm:ml-2">Breaking Barriers</span>
+        <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4">ITIL CONFERENCE 2025</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-2">
+          Crossing Borders<br /><span className="inline-block mt-2 md:ml-2">Breaking Barriers</span>
         </h1>
 
-        <div className="mt-4 sm:mt-8 flex justify-center space-x-2 sm:space-x-4">
+        <div className="mt-4 flex justify-center space-x-2">
           {Object.entries(timer).map(([unit, value]) => (
             <div key={unit} className="text-center">
-              <span className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">{value}</span>
-              <span className="block text-xs sm:text-sm md:text-base lg:text-lg">{unit.toUpperCase()}</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl font-bold">{value}</span>
+              <span className="block text-xs md:text-sm lg:text-base">{unit.toUpperCase()}</span>
             </div>
           ))}
         </div>
 
-        <div className="mt-4 sm:mt-8 flex justify-center space-x-2 sm:space-x-4">
-          <a href="#" className="px-4 py-2 text-sm font-bold bg-blue-600 rounded-lg hover:bg-blue-700 sm:px-6 sm:py-3 sm:text-md md:px-8 md:py-3 md:text-lg">
+        <div className="mt-4 flex justify-center space-x-2">
+          <a href="#" className="px-4 py-2 text-xs md:text-sm lg:text-md font-bold bg-blue-600 rounded-lg hover:bg-blue-700">
             Pre Register
           </a>
-          {/* This button will be hidden on screens smaller than 'md' */}
-          <a href="#" className="hidden md:inline-block px-4 py-2 text-sm font-bold border border-white rounded-lg hover:bg-green-700 sm:px-6 sm:py-3 sm:text-md md:px-8 md:py-3 md:text-lg">
-            Volunteer
-          </a>
-          <a href="#" className="px-4 py-2 text-sm font-bold border border-white rounded-lg hover:bg-orange-700 sm:px-6 sm:py-3 sm:text-md md:px-8 md:py-3 md:text-lg">
+          <a href="#" className="px-4 py-2 text-xs md:text-sm lg:text-md font-bold border border-white rounded-lg hover:bg-orange-700">
             Become a Sponsor
           </a>
         </div>
